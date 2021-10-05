@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<div class="text-center">
+    <p class="display-4">Currency Search</p>
+    <input type="text" id="CurrCode" name="CurrCode">
+    <input type="button" value="Search">
+    <script>
+        var canvas = d3.select("body")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 500);
+        var circle = canvas.append("circle")
+            .attr("cx", 250)
+            .attr("cy", 250)
+            .attr("r", 50)
+            .attr("fill", "red");
+    </script>
+</div>
